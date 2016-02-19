@@ -6,10 +6,11 @@ var helmet = require("helmet");
 var methodOverride = require('method-override');
 var morgan = require('morgan');
 var logger = require('./logger');
+var config = require('./config')();
 
 module.exports = function() {
 	var app = express();
-	app.set("port", 3000);
+	app.set("port", config.port);
 	app.set("json spaces", 4);
 	app.use(morgan("common", {
 		stream: {
