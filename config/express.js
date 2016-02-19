@@ -31,7 +31,8 @@ module.exports = function() {
 	app.use(helmet.nosniff());
 
 	consign({
-		verbose: false,		
+		verbose: false,	
+		cwd: 'app'	
 	})		
 	.include('models')
 	.include('routes')	
