@@ -227,3 +227,7 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:16:36:58 +0000] \"GET /parser/February%2018,%202016 HTTP/1.1\" 200 62\n","timestamp":"2016-02-19T16:36:58.830Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:16:36:58 +0000] \"GET /parser/WRONG_VALUE HTTP/1.1\" 200 41\n","timestamp":"2016-02-19T16:36:58.833Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:16:37:26 +0000] \"GET /parser/February%2018,%202016 HTTP/1.1\" 304 -\n","timestamp":"2016-02-19T16:37:26.613Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:17:39:54 +0000] \"GET / HTTP/1.1\" 200 46\n","timestamp":"2016-02-19T17:39:54.780Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:17:39:54 +0000] \"GET /parser/1455760800 HTTP/1.1\" 200 62\n","timestamp":"2016-02-19T17:39:54.792Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:17:39:54 +0000] \"GET /parser/February%2018,%202016 HTTP/1.1\" 200 62\n","timestamp":"2016-02-19T17:39:54.796Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:17:39:54 +0000] \"GET /parser/WRONG_VALUE HTTP/1.1\" 200 41\n","timestamp":"2016-02-19T17:39:54.798Z"}
