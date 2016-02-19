@@ -1,5 +1,5 @@
 var express = require("express");
-var consign = require("consign");
+var load = require("express-load");
 var bodyParser = require("body-parser");
 var cookieParser = require('cookie-parser');
 var helmet = require("helmet");
@@ -30,11 +30,7 @@ module.exports = function() {
 	app.use(helmet.xssFilter());
 	app.use(helmet.nosniff());
 
-	consign({
-		verbose: false,	
-		cwd: 'app'	
-	})		
-	.include('models')
+	load('models', {cwd: 'app'})
 	.then('routes')	
 	.into(app);
 

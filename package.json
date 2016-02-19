@@ -16,6 +16,7 @@
     "cookie-parser": "^1.4.1",
     "cors": "^2.7.1",
     "express": "^4.13.4",
+    "express-load": "^1.1.15",
     "helmet": "^1.1.0",
     "method-override": "^2.3.5",
     "morgan": "^1.6.1",
