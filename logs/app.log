@@ -326,3 +326,5 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:20:22:34 +0000] \"GET /parser/February,2015 HTTP/1.1\" 500 22\n","timestamp":"2016-02-19T20:22:34.297Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:20:25:48 +0000] \"GET /parser/February,2015 HTTP/1.1\" 404 32\n","timestamp":"2016-02-19T20:25:48.028Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:20:26:03 +0000] \"GET /parser/February,2015 HTTP/1.1\" 200 61\n","timestamp":"2016-02-19T20:26:03.909Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:20:27:46 +0000] \"GET /parser/February,2015 HTTP/1.1\" 304 -\n","timestamp":"2016-02-19T20:27:46.647Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [19/Feb/2016:20:32:16 +0000] \"GET /parser/February,2015 HTTP/1.1\" 304 -\n","timestamp":"2016-02-19T20:32:16.964Z"}

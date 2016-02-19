@@ -35,7 +35,7 @@ module.exports = function() {
 		cwd: 'app'	
 	})		
 	.include('models')
-	.include('routes')	
+	.then('routes')	
 	.into(app);
 
 	app.get('*', function(req, res) {
