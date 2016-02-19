@@ -9,10 +9,10 @@ var logger = require('./logger');
 var config = require('./config')();
 
 module.exports = function() {
-	var app = express();
-	app.set("port", config.port);
-	app.set("json spaces", 4);
-	app.use(morgan("common", {
+	var apps = express();
+	apps.set("port", config.port);
+	apps.set("json spaces", 4);
+	apps.use(morgan("common", {
 		stream: {
 			write: function(message) {
 				logger.info(message);
@@ -20,15 +20,15 @@ module.exports = function() {
 		}
 	}));
 
-	app.use(express.static("./public"));
-	app.use(bodyParser.urlencoded({extended: true}));
-	app.use(bodyParser.json());
-	app.use(methodOverride());
+	apps.use(express.static("./public"));
+	apps.use(bodyParser.urlencoded({extended: true}));
+	apps.use(bodyParser.json());
+	apps.use(methodOverride());
 
-	app.disable('x-powered-by');
-	app.use(helmet.xframe());
-	app.use(helmet.xssFilter());
-	app.use(helmet.nosniff());
+	apps.disable('x-powered-by');
+	apps.use(helmet.xframe());
+	apps.use(helmet.xssFilter());
+	apps.use(helmet.nosniff());
 
 	consign({
 		verbose: false,	
@@ -36,11 +36,11 @@ module.exports = function() {
 	})		
 	.include('models')
 	.include('routes')	
-	.into(app);
+	.into(apps);
 
-	app.get('*', function(req, res) {
+	apps.get('*', function(req, res) {
 		res.status(404).json({msg: 'path not found!'});
 	});
 
-	return app;
+	return apps;
 }
