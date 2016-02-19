@@ -34,7 +34,8 @@ module.exports = function() {
 		verbose: false,
 		cwd: 'app'
 	})		
-	.include('routes')
+	.include("models")
+	.include('routes')	
 	.into(app);
 
 	app.get('*', function(req, res) {
