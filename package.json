@@ -4,7 +4,8 @@
   "description": "An API to get Timestamp  dates",
   "main": "server.js",
   "scripts": {
-    "test": "mocha test/**/*.js"
+    "start": "NODE_ENV=production node server.js",
+    "test": "NODE_ENV=test mocha test/**/*.js"
   },
   "author": "Rodrigo Peleias - @rpeleias",
   "license": "ISC",

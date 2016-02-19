@@ -11,13 +11,7 @@ module.exports = function(app) {
 		  "July", "August", "September", "October", "November", "December"
 		];	
 
-	  	var dateObject;
-	  	if(isNumeric(req.params.dateRepresentation)) {	  		
-	  		dateObject = new Date(req.params.dateRepresentation * 1000);	  		
-	  	}
-	  	else {
-	  		dateObject = new Date(req.params.dateRepresentation);
-	  	}	  	
+	  	var dateObject = new Date(isNumeric(req.params.dateRepresentation) ? req.params.dateRepresentation * 1000 : req.params.dateRepresentation);		  	
 	  	res.json({
 	  		unix: dateObject.getTime()/1000,
 	  		natural: isNaN(dateObject.getTime()) ? null : monthNames[dateObject.getMonth()] + ' ' + dateObject.getDate() + ', ' + dateObject.getFullYear()
