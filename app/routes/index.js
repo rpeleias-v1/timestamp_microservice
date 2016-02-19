@@ -1,13 +1,13 @@
-module.exports = function(app) {
+module.exports = function(apps) {
 
-	var DateParser = app.models.dateParser;	
+	var DateParser = apps.models.dateParser;	
 
-	app.route("/")
+	apps.route("/")
 	  .get(function(req, res) {
 	  	res.json({status: 'Timestamp Microservice API'});
 	  });
 
-	app.route("/parser/:dateRepresentation")
+	apps.route("/parser/:dateRepresentation")
 	  .get(function(req, res) {	  	
 	  	var dateParser = new DateParser(req.params.dateRepresentation);		  	
 	  	res.json({
