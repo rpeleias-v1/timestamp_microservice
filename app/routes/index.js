@@ -1,6 +1,6 @@
 module.exports = function(app) {
 
-	var DateParser = app.models.dateParser;
+	var DateParser = app.models.dateParser;	
 
 	app.route("/")
 	  .get(function(req, res) {
