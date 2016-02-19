@@ -34,7 +34,7 @@ module.exports = function() {
 		verbose: false,
 		cwd: 'app'
 	})		
-	.include("models")
+	.include('models')
 	.include('routes')	
 	.into(app);
 
