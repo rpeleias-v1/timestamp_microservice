@@ -442,3 +442,6 @@
 {"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2016:14:00:49 +0000] \"GET /parser/1455753600 HTTP/1.1\" 200 62\n","timestamp":"2016-02-20T14:00:49.601Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2016:14:00:49 +0000] \"GET /parser/February%2018,%202016 HTTP/1.1\" 200 62\n","timestamp":"2016-02-20T14:00:49.608Z"}
 {"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2016:14:00:49 +0000] \"GET /parser/WRONG_VALUE HTTP/1.1\" 200 41\n","timestamp":"2016-02-20T14:00:49.611Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2016:14:12:03 +0000] \"GET /track/pageviews/article-282712 HTTP/1.1\" 404 32\n","timestamp":"2016-02-20T14:12:03.231Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2016:14:12:04 +0000] \"GET /track/pageviews/article-282712 HTTP/1.1\" 404 32\n","timestamp":"2016-02-20T14:12:04.096Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [20/Feb/2016:14:12:04 +0000] \"GET /track/pageviews/article-282712 HTTP/1.1\" 404 32\n","timestamp":"2016-02-20T14:12:04.468Z"}

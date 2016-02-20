@@ -1,13 +1,5 @@
 describe("Routes: index", function() {
-
-	/*var testDate;
-	var timestampFormat;
-	var naturalDateFormat;
-	beforeEach(function(done) {
-		testDate = new Date('February 18, 2016');
-		timestampFormat = testDate.getTime() 
-	})*/
-
+	
 	describe("GET /", function() {
 		it("returns the API status", function(done) {
 			request.get('/')
