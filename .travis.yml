@@ -6,3 +6,7 @@ notifications:
 script:
  - npm run apidoc
  - npm test
+deploy:
+  provider: heroku
+  api_key: d98bd741-0697-41e7-b617-4f0ca8476727
+  app: vast-refuge-66648
