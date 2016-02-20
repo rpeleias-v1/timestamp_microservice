@@ -4,8 +4,9 @@
   "description": "An API to get Timestamp  dates",
   "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node server.js",
-    "test": "NODE_ENV=test mocha test/**/*.js"
+    "start": "npm run apidoc & NODE_ENV=production node server.js",
+    "test": "NODE_ENV=test mocha test/**/*.js",
+    "apidoc": "apidoc -i app/routes/ -o public/apidoc"
   },
   "author": "Rodrigo Peleias - @rpeleias",
   "license": "ISC",
