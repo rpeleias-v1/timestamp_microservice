@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+ - 5.6.0
+notifications:
+ - rpeleias@hotmail.com
+script:
+ - npm run apidoc
+ - npm test
