@@ -1,5 +1,13 @@
 describe("Routes: index", function() {
 
+	/*var testDate;
+	var timestampFormat;
+	var naturalDateFormat;
+	beforeEach(function(done) {
+		testDate = new Date('February 18, 2016');
+		timestampFormat = testDate.getTime() 
+	})*/
+
 	describe("GET /", function() {
 		it("returns the API status", function(done) {
 			request.get('/')
@@ -14,10 +22,10 @@ describe("Routes: index", function() {
 
 	describe("GET /parser/:dataRepresentation", function() {
 		it("returns date Representation by timestamp at 00:00", function(done) {
-			request.get('/parser/' + 1455760800)
+			request.get('/parser/' + 1455753600)
 			.expect(200)
 			.end(function(err, res) {				
-				expect(res.body.unix).to.eql(1455760800);
+				expect(res.body.unix).to.eql(1455753600);
 				expect(res.body.natural).to.eql('February 18, 2016');
 				done(err);
 			});
@@ -26,7 +34,7 @@ describe("Routes: index", function() {
 			request.get('/parser/February 18, 2016')
 			.expect(200)
 			.end(function(err, res) {				
-				expect(res.body.unix).to.eql(1455760800);
+				expect(res.body.unix).to.eql(1455753600);
 				expect(res.body.natural).to.eql('February 18, 2016');
 				done(err);
 			});

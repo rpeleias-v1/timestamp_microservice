@@ -3,13 +3,13 @@ describe("Models: DateParser", function() {
 	var DateObject = app.models.dateParser;
 
 	describe("Valid object creation, by date Timestamp parameter", function(done) {
-		var dateObject = new DateObject(1455760800);
+		var dateObject = new DateObject(1455753600);
 		it("validate isNumeric() as true", function(done) {
 			expect(dateObject.isNumeric()).to.be.true;
 			done();
 		});
 		it("getTimestamp() must return a valid unix timestamp", function(done) {
-			expect(dateObject.getTimestamp()).to.eql(1455760800);
+			expect(dateObject.getTimestamp()).to.eql(1455753600);
 			done();
 		});
 		it("getNaturalDate() must return a valid natural date representaion", function(done) {
@@ -25,7 +25,7 @@ describe("Models: DateParser", function() {
 			done();
 		});
 		it("getTimestamp() must return a valid unix timestamp", function(done) {
-			expect(dateObject.getTimestamp()).to.eql(1455760800);
+			expect(dateObject.getTimestamp()).to.eql(1455753600);
 			done();
 		});
 		it("getNaturalDate() must return a valid natural date representaion", function(done) {
